@@ -1,0 +1,33 @@
+<div class="d-flex flex-row align-items-center mb-5">
+    <%= image_tag("icon.png", size: '24') %>
+    <h1 class="text-center flex-grow-1">Counter</h1>
+</div>
+
+<% cache @host do %>
+    <h2 class="mb-3"> Thank you for visiting <%= @host %></h2>
+<% end %>
+
+<table class="table table-bordered text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+    <tr class="table-dark">
+        <th>Server</th>
+        <th>Last Visited At</th>
+        <th>Visit Count</th>
+    </tr>
+    <% cache @servers do %>
+        <% @servers.each do |server| %>
+            <% cache server do %>
+                <% if format_hostname(server) == @host %>
+                <tr class="table-primary">
+                <% else %>
+                <tr>
+                <% end %>
+                    <td><%= format_hostname(server) %></td>
+                    <td><%= format_timestamp(server) %></td>
+                    <td><%= format_visits(server) %></td>
+                </tr>
+            <% end %>
+        <% end %>
+    <% end %>
+</table>
+
+<%= render "layouts/hosted" %>
