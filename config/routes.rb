@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Redirect any other path to root
-  match "*path" => redirect('/'), via: [:get, :post]
+  match "*path" => 'counter#index', via: :all
 end
