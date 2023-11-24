@@ -4,7 +4,7 @@
 </div>
 
 <% cache @host do %>
-    <h2 class="mb-3"> Thank you for visiting <%= @host %></h2>
+    <h2 class="mb-3 fs-4"> Thank you for visiting <%= @host %></h2>
 <% end %>
 
 <table class="table table-bordered text-center shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -16,7 +16,7 @@
     <% cache @servers do %>
         <% @servers.each do |server| %>
             <% cache server do %>
-                <% if format_hostname(server) == @host %>
+                <% if server.name == SERVER_HOSTNAME %>
                 <tr class="table-primary">
                 <% else %>
                 <tr>
