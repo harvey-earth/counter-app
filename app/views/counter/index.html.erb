@@ -16,7 +16,7 @@
     <% cache @servers do %>
         <% @servers.each do |server| %>
             <% cache server do %>
-                <% if format_hostname(server) == @host %>
+                <% if server.name == SERVER_HOSTNAME %>
                 <tr class="table-primary">
                 <% else %>
                 <tr>
