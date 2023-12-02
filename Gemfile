@@ -40,6 +40,8 @@ gem 'resolv', '~> 0.2.2'
 
 gem 'bundle-audit'
 gem 'brakeman'
+gem 'rubocop'
+gem 'rubocop-rails'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
