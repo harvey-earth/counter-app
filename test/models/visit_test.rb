@@ -1,7 +1,8 @@
 require "test_helper"
 
 class VisitTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "visits should have a server" do
+    visit = Visit.new
+    assert_not visit.save
+  end
 end
