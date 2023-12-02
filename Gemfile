@@ -35,6 +35,9 @@ gem "redis", ">= 4.0.1"
 # Use counter_culture for assosciation caching
 gem 'counter_culture', '~> 3.2'
 
+# Use resolve for IP address regex validation
+gem 'resolv', '~> 0.2.2'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
