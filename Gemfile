@@ -39,6 +39,7 @@ gem 'counter_culture', '~> 3.2'
 gem 'resolv', '~> 0.2.2'
 
 gem 'bundle-audit'
+gem 'brakeman'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
