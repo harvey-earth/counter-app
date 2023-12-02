@@ -38,6 +38,8 @@ gem 'counter_culture', '~> 3.2'
 # Use resolve for IP address regex validation
 gem 'resolv', '~> 0.2.2'
 
+gem 'bundle-audit'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
