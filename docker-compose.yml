@@ -16,7 +16,7 @@ services:
       DATABASE_HOST: db
       DATABASE_PASSWORD: password
       DATABASE_USERNAME: postgres
-      REDIS_URL: redis://localhost:6379/1
+      REDIS_URL: redis://redis:6379/1
       SECRET_KEY_BASE: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     ports:
       - "3000:3000"
