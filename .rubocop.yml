@@ -3,3 +3,10 @@ require:
 
 AllCops:
     SuggestExtensions: false
+    Exclude:
+      - 'db/**/*'
+      - 'bin/*'
+Style/FrozenStringLiteralComment:
+    Enabled: false
+Metrics/BlockLength:
+    Enabled: false
