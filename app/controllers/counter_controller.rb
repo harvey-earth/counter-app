@@ -1,3 +1,4 @@
+# Main application controller
 class CounterController < ApplicationController
   def index
     # Get this server, or create a new one in database

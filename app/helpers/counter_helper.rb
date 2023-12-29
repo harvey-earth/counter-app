@@ -1,3 +1,4 @@
+# Helpers for main views
 module CounterHelper
   def format_hostname(server)
     server.name
