@@ -6,7 +6,7 @@ AllCops:
     Exclude:
       - 'db/**/*'
       - 'bin/*'
-      - 'vendor/'
+      - 'vendor/**/*'
 Style/FrozenStringLiteralComment:
     Enabled: false
 Metrics/BlockLength:
